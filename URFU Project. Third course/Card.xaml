@@ -1,0 +1,67 @@
+﻿<Window x:Class="URFU_Project._Third_course.Card"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:URFU_Project._Third_course"
+        mc:Ignorable="d"
+        Title="Card" Height="877" Width="620" ResizeMode="NoResize" Background="gray">
+    <Grid Margin="6" Background="White">
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+                    
+        <Grid x:Name="сomplaintsGrid" Grid.Row="0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="6*"/>
+            </Grid.RowDefinitions>
+
+            <Label Content="Жалобы:" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Grid.Row="1" x:Name="complaintsTBl" Background="#F2F2F2" FontSize="14" TextWrapping="Wrap"
+                       ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+
+        </Grid>
+
+        <Grid x:Name="anamnesisGrid" Grid.Row="1">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="6*"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Content="Анамнез:" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Grid.Row="1" x:Name="anamnesisTBl" Background="#F2F2F2" FontSize="14" TextWrapping="Wrap"/>
+
+        </Grid>
+
+        <Grid x:Name="objectiveDataGrid" Grid.Row="2">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="6*"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Content="Объективные данные:" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Grid.Row="1" x:Name="objectiveDataTBl" Background="#F2F2F2" FontSize="14" TextWrapping="Wrap"/>
+        </Grid>
+
+        <Grid x:Name="therapyGrid" Grid.Row="3">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="6*"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Content="Назначено лечение:" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Grid.Row="1" x:Name="therapyTBl" Background="#F2F2F2" FontSize="14" TextWrapping="Wrap"/>
+
+        </Grid>
+
+    </Grid>
+</Window>
